@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@11.9.0",
   "engines": {
-    "node": "22.13.0"
+    "node": ">=22.13.0 <23"
   },
   "scripts": {
     "dev": "next dev",
@@ -28,5 +28,11 @@
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3"
   },
-  "type": "module"
+  "type": "module",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "unrs-resolver"
+    ]
+  }
 }
